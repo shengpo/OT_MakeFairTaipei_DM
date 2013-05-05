@@ -1,7 +1,7 @@
 OT MakeFair:Taipei DM
 ====================
 
-Using Processing to make a DM for Openlab.Taipei attending Make Fair:Taipei 2013
+Using Processing to make a DM for [Openlab.Taipei](http://www.openlabtaipei.org/) attending Make Fair:Taipei 2013
 
 
 DM information
