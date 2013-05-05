@@ -12,16 +12,8 @@
  *****************************************/
 
 //for constent
-PShape ot_logo = null;
-PImage processing = null;
-PImage puredata = null;
-PImage arduino = null;
-PImage blender = null;
-PImage fritzing = null;
-PImage gimp = null;
-PImage of = null;
-PImage inkscape = null;
-PImage reprap = null;
+PImage ot_logo = null;
+PImage qr = null;
 PImage facebook = null;
 PImage blogger = null;
 
@@ -53,28 +45,13 @@ void setup() {
 //        textMode(SHAPE);
 
         //other resources
-        ot_logo = loadShape("ot_logo.svg");
-        processing = loadImage("processing.png");
-        puredata = loadImage("puredata.png");
-        arduino = loadImage("arduino.png");
-        blender = loadImage("blender.png");
-        fritzing = loadImage("fritzing.png");
-        gimp = loadImage("gimp.png");
-        of = loadImage("of.png");
-        inkscape = loadImage("inkscape.png");
-        reprap = loadImage("reprap.png");
+        ot_logo = loadImage("ot_logo2.png");
+        qr = loadImage("github_link_QRCode.png");
         facebook = loadImage("facebook.png");
         blogger = loadImage("blogger.png");
 
-        processing.resize(64, 0);
-        puredata.resize(64, 0);
-        arduino.resize(64, 0);
-        blender.resize(64, 0);
-        fritzing.resize(64, 0);
-        gimp.resize(64, 0);
-        of.resize(64, 0);
-        inkscape.resize(64, 0);
-        reprap.resize(64, 0);
+        ot_logo.resize(128, 0);
+        qr.resize(64, 0);
         facebook.resize(64, 0);
         blogger.resize(64, 0);
 
