@@ -1,6 +1,9 @@
 /*****************************************
  This is the front side of DM  made for Openlab.Taipei attending Make Fair Taiwan 2013
 
+ Setting:
+ - using variable 'scale' to set the scale ratio for previewing (default value is 3.55 for basic preview resolution of A3 size)
+
  Usage:
  - press 't' to produce huge solution image for printing
  - press 'l' to show reference line for layouting
@@ -10,6 +13,10 @@
  Author: Shen, Sheng-Po (http://shengpo.github.io)
  License: CC BY-SA 3.0
  *****************************************/
+
+//for scale preview resolution
+//float scale = 3.55;        //default value is 3.55 for basic preview resolution of A3 size
+float scale = 2.5;        //for testing on small screen
 
 //for constent
 PImage ot_logo = null;
@@ -22,8 +29,8 @@ ReferenceImageMaker referenceImageMaker = null;
 
 //for pin manager
 PinManager pinManager = null;
-int cols = 120;                //pin的column數
-int rows = 90;                 //pin的row數
+int cols = int(34*scale);                //pin的column數
+int rows = int(25*scale);              //pin的row數
 
 //aTileSaver (for producing huge resolution image for printing out)
 aTileSaver tiler = null;  
@@ -34,13 +41,13 @@ boolean isShowReferenceLine = false;
 
 
 void setup() {
-        size(int(420*3.55), int(297*3.55), P3D);        //以A3大小為例
+        size(int(420*scale), int(297*scale), P3D);        //以A3大小為例
         background(255);
         
         /*for content*/
         //setting font type
         //println(PFont.list());
-        textFont(createFont("SansSerif", 18));
+        textFont(createFont("SansSerif", 5*scale));
         textAlign(LEFT, CENTER);
 //        textMode(SHAPE);
 
@@ -50,10 +57,10 @@ void setup() {
         facebook = loadImage("facebook.png");
         blogger = loadImage("blogger.png");
 
-        ot_logo.resize(128, 0);
-        qr.resize(64, 0);
-        facebook.resize(64, 0);
-        blogger.resize(64, 0);
+        ot_logo.resize(int(36*scale), 0);
+        qr.resize(int(18*scale), 0);
+        facebook.resize(int(9*scale), 0);
+        blogger.resize(int(9*scale), 0);
 
 
         /*for background image*/
@@ -91,6 +98,7 @@ void draw() {
                 stroke(0, 180, 0);
                 strokeWeight(1);
                 line(width/2, 0, width/2, height);
+                line(0, height/2, width, height/2);
         }
         //---end of drawing content
 
