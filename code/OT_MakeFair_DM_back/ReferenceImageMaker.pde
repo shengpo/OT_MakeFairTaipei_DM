@@ -1,7 +1,7 @@
 public class ReferenceImageMaker {
         private PGraphics pg = null;
 
-        private int triangleCount = 30;
+        private int triangleCount = 80;
         private float[][][] triangles = null;
         
         

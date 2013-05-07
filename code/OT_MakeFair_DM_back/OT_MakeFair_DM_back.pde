@@ -14,9 +14,13 @@
  License: CC BY-SA 3.0
  *****************************************/
 
-//for scale preview resolution
-//float scale = 3.55;        //default value is 3.55 for basic preview resolution of A3 size
-float scale = 2.5;        //for testing on small screen
+//for scaling preview resolution
+float scale = 3.55;        //default value is 3.55 for basic preview resolution of A3 size
+//float scale = 2.5;        //for testing on small screen
+
+//for real printing size of width (in pixel)
+//int printWidth = 4961;        //this is the default resolution for A3 size in pixel with 300dpi (4961 x 3508 pixel)
+int printWidth = int(4961*1.5);        //just for geting better printing result (maybe)
 
 //for constent
 PImage ot_logo = null;
@@ -109,7 +113,8 @@ void draw() {
 
 void keyPressed() {
         if (key=='t'){
-                tiler.init("Simple"+nf(frameCount, 5), 5);        //最後一個參數表示要將整個畫面切成幾乘幾的tile
+                int tileNumber = printWidth/width;
+                tiler.init("Sample"+nf(frameCount, 5), tileNumber);        //最後一個參數表示要將整個畫面切成幾乘幾的tile
         }
 
         if (key == 'l') {

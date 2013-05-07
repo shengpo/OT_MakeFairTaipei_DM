@@ -33,7 +33,7 @@ public class Pin {
                         if (pickedPins.size() == 0) {    //周遭沒有被picked的pin
                                 noStroke();
                                 fill(0, alphavalue);
-                                ellipse(x, y, 4, 4);
+                                ellipse(x, y, 5, 5);
                         }
                         else {
                                 for (Pin p : pickedPins) {
@@ -50,7 +50,7 @@ public class Pin {
                         //point(x, y);
                         noStroke();
                         fill(0, alphavalue);
-                        ellipse(x, y, 1, 1);
+                        ellipse(x, y, 2, 2);
                 }
         }
 

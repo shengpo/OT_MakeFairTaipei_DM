@@ -7,7 +7,7 @@ void showContent(){
         
         //texts
         fill(0);
-        text("scan the code to get the code", width*0.1, height*0.46);
+        text("scan the code to get this DM code", width*0.1, height*0.46);
         text("http://goo.gl/0Nu1y", width*0.1, height*0.49);
         text("www.openlabtaipei.org", width*0.85, height*0.523);
         text("/groups/openlab.taipei", width*0.85, height*0.553);
