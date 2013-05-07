@@ -1,5 +1,5 @@
 /*****************************************
- This is the front side of DM  made for Openlab.Taipei attending Make Fair Taiwan 2013
+ This is the back side of DM  made for Openlab.Taipei attending Make Fair Taiwan 2013
 
  Setting:
  - using variable 'scale' to set the scale ratio for previewing (default value is 3.55 for basic preview resolution in fixed ratio of A3 size)
