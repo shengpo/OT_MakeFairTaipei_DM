@@ -1,17 +1,15 @@
 void showContent(){
-        shape(ot_logo, 100, 100);
-        image(processing, 650, 200);
-        image(puredata, 400, 100);
-        image(arduino, 350, 400);
-        image(blender, 300, 300);
-        image(fritzing, 450, 400);
-        image(gimp, 500, 300);
-        image(of, 700, 500);
-        image(inkscape, 200, 600);
-        image(reprap, 300, 600);
-        image(facebook, 600, 500);
-        image(blogger, 500, 200);
+        shape(ot_logo, width*0.05, height*0.05);
+        image(processing, width*0.7, height*0.05);
+        image(puredata, width*0.3, height*0.1);
+        image(arduino, width*0.1, height*0.35);
+        image(blender, width*0.8, height*0.6);
+        image(fritzing, width*0.4, height*0.55);
+        image(gimp, width*0.25, height*0.65);
+        image(of, width*0.55, height*0.4);
+        image(inkscape, width*0.6, height*0.7);
+        image(reprap, width*0.3, height*0.8);
         
         fill(0);
-        text("Openlab.Taipei 口丁集社", 100, 300);
+        text("Openlab.Taipei 口丁集社", width*0.03, height*0.19);
 }

@@ -37,8 +37,6 @@ PImage gimp = null;
 PImage of = null;
 PImage inkscape = null;
 PImage reprap = null;
-PImage facebook = null;
-PImage blogger = null;
 
 //for reference image maker
 ReferenceImageMaker referenceImageMaker = null;
@@ -78,8 +76,6 @@ void setup() {
         of = loadImage("of.png");
         inkscape = loadImage("inkscape.png");
         reprap = loadImage("reprap.png");
-        facebook = loadImage("facebook.png");
-        blogger = loadImage("blogger.png");
 
         processing.resize(int(18*scale), 0);
         puredata.resize(int(18*scale), 0);
@@ -90,8 +86,6 @@ void setup() {
         of.resize(int(18*scale), 0);
         inkscape.resize(int(18*scale), 0);
         reprap.resize(int(18*scale), 0);
-        facebook.resize(int(18*scale), 0);
-        blogger.resize(int(18*scale), 0);
 
 
         /*for background image*/
