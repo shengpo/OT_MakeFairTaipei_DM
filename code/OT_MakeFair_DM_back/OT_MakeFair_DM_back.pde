@@ -60,7 +60,7 @@ void setup() {
 
         //other resources
         ot_logo = loadImage("ot_logo2.png");
-        qr = loadImage("github_link_QRCode.png");
+        qr = loadImage("link_text_QRCode.png");
         facebook = loadImage("facebook.png");
         blogger = loadImage("blogger.png");
 
