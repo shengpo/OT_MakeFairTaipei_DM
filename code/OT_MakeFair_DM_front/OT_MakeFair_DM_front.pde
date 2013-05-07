@@ -77,6 +77,7 @@ void setup() {
         inkscape = loadImage("inkscape.png");
         reprap = loadImage("reprap.png");
 
+        ot_logo.scale(0.28*scale);
         processing.resize(int(18*scale), 0);
         puredata.resize(int(18*scale), 0);
         arduino.resize(int(18*scale), 0);
