@@ -15,6 +15,8 @@
  License: CC BY-SA 3.0
  *****************************************/
 
+
+
 //for scaling preview resolution
 float scale = 3.55;        //default value is 3.55 for basic preview resolution in fixed ratio of A3 size
 //float scale = 2.5;        //for testing on small screen
