@@ -2,10 +2,11 @@
  This is the front side of DM  made for Openlab.Taipei attending Make Fair Taiwan 2013
 
  Setting:
- - using variable 'scale' to set the scale ratio for previewing (default value is 3.55 for basic preview resolution of A3 size)
+ - using variable 'scale' to set the scale ratio for previewing (default value is 3.55 for basic preview resolution in fixed ratio of A3 size)
+ - using variable 'printWidth' to set the resolution for real printing out!!  (A3 size in pixel with 300dpi is 4961 x 3508 pixel )
 
  Usage:
- - press 't' to produce huge solution image for printing
+ - press 't' to produce huge solution image for printing (depended on variable 'printWidth')
  - press 'l' to show reference line for layouting
 
  
@@ -15,7 +16,7 @@
  *****************************************/
 
 //for scaling preview resolution
-float scale = 3.55;        //default value is 3.55 for basic preview resolution of A3 size
+float scale = 3.55;        //default value is 3.55 for basic preview resolution in fixed ratio of A3 size
 //float scale = 2.5;        //for testing on small screen
 
 //for real printing size of width (in pixel)
