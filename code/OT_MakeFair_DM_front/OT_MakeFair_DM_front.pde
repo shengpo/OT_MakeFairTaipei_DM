@@ -1,6 +1,10 @@
 /*****************************************
  This is the front side of DM  made for Openlab.Taipei attending Make Fair Taiwan 2013
 
+ Setting:
+ - using variable 'scale' to set the scale ratio for previewing (default value is 3.55 for basic preview resolution in fixed ratio of A3 size)
+ - using variable 'printWidth' to set the resolution for real printing out!!  (A3 size in pixel with 300dpi is 4961 x 3508 pixel )
+
  Usage:
  - press 't' to produce huge solution image for printing
  - press 'l' to show reference line for layouting
@@ -10,6 +14,17 @@
  Author: Shen, Sheng-Po (http://shengpo.github.io)
  License: CC BY-SA 3.0
  *****************************************/
+
+
+
+//for scaling preview resolution
+float scale = 3.55;        //default value is 3.55 for basic preview resolution in fixed ratio of A3 size
+//float scale = 2.5;        //for testing on small screen
+
+//for real printing size of width (in pixel)
+//int printWidth = 4961;        //this is the default resolution for A3 size in pixel with 300dpi (4961 x 3508 pixel)
+int printWidth = int(4961*1.5);        //just for geting better printing result (maybe)
+
 
 //for constent
 PShape ot_logo = null;
@@ -30,8 +45,8 @@ ReferenceImageMaker referenceImageMaker = null;
 
 //for pin manager
 PinManager pinManager = null;
-int cols = 120;                //pin的column數
-int rows = 90;                 //pin的row數
+int cols = int(34*scale);                //pin的column數
+int rows = int(25*scale);              //pin的row數
 
 //aTileSaver (for producing huge resolution image for printing out)
 aTileSaver tiler = null;  
@@ -42,13 +57,13 @@ boolean isShowReferenceLine = false;
 
 
 void setup() {
-        size(int(420*3.55), int(297*3.55), P3D);        //以A3大小為例
+        size(int(420*scale), int(297*scale), P3D);        //以A3大小為例
         background(255);
         
         /*for content*/
         //setting font type
         //println(PFont.list());
-        textFont(createFont("SansSerif", 18));
+        textFont(createFont("SansSerif", 5*scale));
         textAlign(LEFT, CENTER);
 //        textMode(SHAPE);
 
@@ -66,17 +81,17 @@ void setup() {
         facebook = loadImage("facebook.png");
         blogger = loadImage("blogger.png");
 
-        processing.resize(64, 0);
-        puredata.resize(64, 0);
-        arduino.resize(64, 0);
-        blender.resize(64, 0);
-        fritzing.resize(64, 0);
-        gimp.resize(64, 0);
-        of.resize(64, 0);
-        inkscape.resize(64, 0);
-        reprap.resize(64, 0);
-        facebook.resize(64, 0);
-        blogger.resize(64, 0);
+        processing.resize(int(18*scale), 0);
+        puredata.resize(int(18*scale), 0);
+        arduino.resize(int(18*scale), 0);
+        blender.resize(int(18*scale), 0);
+        fritzing.resize(int(18*scale), 0);
+        gimp.resize(int(18*scale), 0);
+        of.resize(int(18*scale), 0);
+        inkscape.resize(int(18*scale), 0);
+        reprap.resize(int(18*scale), 0);
+        facebook.resize(int(18*scale), 0);
+        blogger.resize(int(18*scale), 0);
 
 
         /*for background image*/
@@ -124,7 +139,8 @@ void draw() {
 
 void keyPressed() {
         if (key=='t'){
-                tiler.init("Simple"+nf(frameCount, 5), 5);        //最後一個參數表示要將整個畫面切成幾乘幾的tile
+                int tileNumber = printWidth/width;
+                tiler.init("Sample"+nf(frameCount, 5), tileNumber);        //最後一個參數表示要將整個畫面切成幾乘幾的tile
         }
 
         if (key == 'l') {

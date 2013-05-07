@@ -2,7 +2,7 @@ public class Pin {
         private PinManager pinManager = null;
         private ArrayList<Pin> pinList = null;          //whole pinList, for referenced
         private ArrayList<Pin> pickedPins = null;    //for picked pins arounding this pin
-        private float alphavalue = 50;
+        private float alphavalue = 100;
 
         public int id = -1;
 
@@ -33,7 +33,7 @@ public class Pin {
                         if (pickedPins.size() == 0) {    //周遭沒有被picked的pin
                                 noStroke();
                                 fill(0, alphavalue);
-                                ellipse(x, y, 4, 4);
+                                ellipse(x, y, 5, 5);
                         }
                         else {
                                 for (Pin p : pickedPins) {
@@ -50,7 +50,7 @@ public class Pin {
                         //point(x, y);
                         noStroke();
                         fill(0, alphavalue);
-                        ellipse(x, y, 1, 1);
+                        ellipse(x, y, 2, 2);
                 }
         }
 
