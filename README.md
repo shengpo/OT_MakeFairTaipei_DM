@@ -4,10 +4,10 @@ OT MakeFair:Taipei DM
 Using Processing to make a DM for [Openlab.Taipei](http://www.openlabtaipei.org/) attending Make Fair:Taipei 2013
 
 front side:<br/>
-![front side](https://raw.github.com/shengpo/OT_MakeFairTaipei_DM/master/print_samples/front_5964x4216.png)
+![front side](https://raw.github.com/shengpo/OT_MakeFairTaipei_DM/master/print_samples/front_8946x6324.png)
 
 back side:<br/>
-![back side](https://raw.github.com/shengpo/OT_MakeFairTaipei_DM/master/print_samples/back_5964x4216.png)
+![back side](https://raw.github.com/shengpo/OT_MakeFairTaipei_DM/master/print_samples/back_8946x6324.png)
 
 DM information
 ==============
