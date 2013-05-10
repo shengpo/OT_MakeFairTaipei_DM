@@ -3,7 +3,7 @@ void showContent(){
         image(blender, width*0.7, height*0.05);
         image(puredata, width*0.3, height*0.1);
         image(reprap, width*0.1, height*0.35);
-        image(processing, width*0.8, height*0.6);
+        image(processing, width*0.79, height*0.6);
         image(fritzing, width*0.4, height*0.45);
         image(gimp, width*0.25, height*0.6);
         image(of, width*0.55, height*0.3);
@@ -15,9 +15,9 @@ void showContent(){
         text("http://puredata.info", width*0.36, height*0.14);
         text("透過拉線的方式建構邏輯，可以在一個小時內，做出自己的即時DJ音樂系統，或是互動影片播放工具 by MAO", width*0.29, height*0.14, width*0.2, height*0.12);
         text("圖像化的撰寫過程，讓寫程式過程如同堆積木一般輕鬆、快樂，打破初學者對程式設計的恐懼 by 阿亂", width*0.29, height*0.22, width*0.2, height*0.12);
-        text("http://processing.org", width*0.86, height*0.63);
-        text("不需要艱深的程式語言基礎，透過豐富的文件以及範例，你也可以建立自己的數位藝術作品 by Pepper", width*0.785, height*0.64, width*0.2, height*0.12);
-        text("語法簡單，容易上手，能夠快速建立原型 by shengpo", width*0.785, height*0.71, width*0.2, height*0.12);
+        text("http://processing.org", width*0.85, height*0.63);
+        text("不需要艱深的程式語言基礎，透過豐富的文件以及範例，你也可以建立自己的數位藝術作品 by Pepper", width*0.775, height*0.64, width*0.2, height*0.12);
+        text("語法簡單，容易上手，能夠快速建立原型 by shengpo", width*0.775, height*0.71, width*0.2, height*0.12);
         text("http://www.arduino.cc", width*0.16, height*0.73);
         text("減化了很多作品硬體製作電路可能會不穩定的因素，讓創作者有更多時間可以實現自己的想法 by 江振維", width*0.08, height*0.745, width*0.2, height*0.12);
         text("國內外都有很多好作品可以參考，也有很多的感測器可以套用上去，讓創作的人可以有很多空間去發揮 by 劉玉晨", width*0.08, height*0.835, width*0.2, height*0.12);

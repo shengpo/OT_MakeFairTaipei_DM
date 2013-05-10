@@ -23,7 +23,7 @@ float scale = 3.55;        //default value is 3.55 for basic preview resolution 
 
 //for real printing size of width (in pixel)
 //int printWidth = 4961;        //this is the default resolution for A3 size in pixel with 300dpi (4961 x 3508 pixel)
-int printWidth = int(4961*1.5);        //just for geting better printing result (maybe)
+int printWidth = int(4961*2);        //just for geting better printing result (maybe)
 
 
 //for constent
